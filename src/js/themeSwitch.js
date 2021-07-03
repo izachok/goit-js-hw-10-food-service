@@ -11,7 +11,7 @@ export default function setupThemeSwither() {
 }
 
 function onThemeSwitchClick(event) {
-  if (event.currentTarget.checked) {
+  if (event.target.checked) {
     localStorage.setItem('theme', Theme.DARK);
     setThemeSwitch(Theme.DARK);
   } else {
